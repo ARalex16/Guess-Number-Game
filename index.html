@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+</head>
+<body>
+    <section id="container">
+        <p id="title">Guess The Number</p>
+        
+        <!-- StartUp Page -->
+        <div id="startUp">      
+            <div id="mode">
+                <p style="color: #33b249;"><input type="radio" name="mode" onchange="modeState()" value="easy" checked> Easy</p>
+                <p style="color: #ff000a;"><input type="radio" name="mode" onchange="modeState()" value="hard"> Hard</p>
+            </div>
+            <p id="info"><b>*10</b> attempts</p>
+        
+            <div id="buttons">
+                <button class="btns" id="btnStart">Start</button>
+            </div>
+        </div>
+        
+        
+        <!-- Game Section Page -->
+        <div id="gameSection">
+            <p id="para">Guess the Number from 1 to 100</p> 
+            <input id="userInp" type="number">
+            <p id="err"></p>
+            
+            <button class="btns" id="checkBtn">Check</button>  
+            <button class="btns" id="restartBtn">Restart</button>  
+            <p id="ourGuess"></p>
+            <p id="attemptInfo"></p>
+            
+            <div id="backSect">
+                <i class="fa-sharp fa-solid fa-reply"></i> 
+                <p style="font-size: 10px; font-weight: 600; padding: 3px 0 0 3px;">Back</p>
+            </div>
+        </div>
+    </section>
+    
+    <script src="index.js"></script>
+</body>
+</html>
